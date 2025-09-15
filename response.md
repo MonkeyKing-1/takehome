@@ -1,0 +1,2 @@
+1. If possible, retrain the amateur model to use the expert model's tokenization. Comparing logits just doesn't make sense if the tokenizations are different.
+2. I can see how it addresses the issues with taking the highest logit token or sampling, but I feel like it does this at high cost. In particular, requiring two models is quite annoying. And they have to have the same kind of tokenization (though I guess most models in the same family do).
